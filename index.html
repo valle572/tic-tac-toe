@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./script.js"></script>
+</head>
+<body>
+  
+  <ul class="game">
+
+    <!-- Top Row -->
+    <li><img onclick="makeMove(0)" src="./img/empty.svg"></li>
+    <li><img onclick="makeMove(1)" src="./img/empty.svg"></li>
+    <li><img onclick="makeMove(2)" src="./img/empty.svg"></li>
+
+    <!-- Middle Row -->
+    <li><img onclick="makeMove(3)" src="./img/empty.svg"></li>
+    <li><img onclick="makeMove(4)" src="./img/empty.svg"></li>
+    <li><img onclick="makeMove(5)" src="./img/empty.svg"></li>
+    
+    <!-- Bottom Row -->
+    <li><img onclick="makeMove(6)" src="./img/empty.svg"></li>
+    <li><img onclick="makeMove(7)" src="./img/empty.svg"></li>
+    <li><img onclick="makeMove(8)" src="./img/empty.svg"></li>
+  </ul>
+  <button onclick="newGame()">Reset</button>
+  
+</body>
+</html>

@@ -1,0 +1,65 @@
+/* General ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 100vh;
+}
+
+
+/* Game •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• */
+.game {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: clamp(16rem, 90vmin, 24rem);
+  aspect-ratio: 1 / 1;
+  background-color: #f90;
+  gap: 0.25rem;
+}
+
+/* Cells */
+li {
+  background-color: #000;
+  display: grid;
+  place-items: center;
+  list-style: none;
+  transition: filter 500ms ease-in-out;
+}
+li.dim {
+  filter: brightness(0.25) saturate(0.25);
+}
+.empty:hover > img {
+  opacity: 0.5;
+}
+.game#x > .empty:hover > img,
+li.x > img {
+  content: url(./img/x.svg);
+}
+
+/* Disabled since computer player plays as 'o' */
+/* .game#o > .empty:hover > img, */
+li.o > img {
+  content: url(./img/o.svg);
+}
+
+/* Reset Button */
+button {
+  color: #f00;
+  background-color: transparent;
+  font-size: 1.5rem;
+  border: 2px solid #500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+button:hover {
+  background-color: #500;
+}
