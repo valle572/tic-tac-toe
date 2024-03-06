@@ -6,11 +6,11 @@
 ## General Information
 - Uses Minimax Algorithm for computer player
 - Uses Alpha-Beta pruning to optimize algorithm
-<!--
-## Video Tutorials
-Tic-Tac-Toe tutorial: [click here](https://www.youtube.com/watch?v=pNXY8alQqCs)
 
-Minimax Algorithm tutorial: [click here](https://www.youtube.com/watch?v=ViiG5ZZIccQ)
--->
+## Video Tutorials
+Tic-Tac-Toe tutorial: [click here](https://youtu.be/XG210FAolc0)
+
+Minimax algorithm tutorial: [click here](https://youtu.be/xuUmJYGHz1A)
+
 ## Contact
 Created by [@valle572](https://itsvalle.com) - feel free to contact me :)
